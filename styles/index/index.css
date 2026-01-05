@@ -15,6 +15,9 @@ body {
 body * {
   max-width: 2000px;
 }
+body * .S718d8e {
+  color: #2abec4;
+}
 
 .header {
   position: static;
@@ -103,9 +106,6 @@ body * {
 .main--body div {
   color: #fff;
 }
-.main--body div .S718d8e {
-  color: #2abec4;
-}
 .main--body div h1 {
   font-size: clamp(16px, 5vw, 30px);
 }
@@ -117,4 +117,35 @@ body * {
   font-weight: 700;
   font-size: clamp(20px, 5vw, 30px);
   color: #b77a48;
-}/*# sourceMappingURL=indes.css.map */
+}
+
+.info {
+  margin-top: 10px;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 100px;
+  max-height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info--body {
+  height: 100%;
+  width: 95%;
+  border-radius: clamp(24px, 5vw, 70px);
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+.info--body--title {
+  font-weight: 600;
+  font-size: clamp(16px, 5vw, 30px);
+}
+.info--body--content {
+  font-weight: 400;
+  font-size: clamp(14px, 5vw, 20px);
+}/*# sourceMappingURL=index.css.map */
