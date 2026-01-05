@@ -1,6 +1,7 @@
 * {
   font-family: "Montserrat", sans-serif;
   transition: all 0.3s ease;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,21 +11,26 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
+}
+body * {
+  max-width: 2000px;
 }
 
 .header {
-  max-width: 2000px;
-  position: absolute;
-  top: 10px;
+  position: static;
+  margin-top: 10px;
+  margin-bottom: 10px;
   min-height: 70px;
   max-height: 200px;
   height: 10vh;
-  width: 95%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .header--body {
   position: relative;
-  width: 100%;
+  width: 95%;
   height: 100%;
 }
 .header--body .backgroung {
@@ -46,7 +52,6 @@ body {
   width: 100%;
   display: flex;
   padding: 0px 30px;
-  box-sizing: border-box;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -73,4 +78,43 @@ body {
 .header--body .content a:hover {
   font-weight: 500;
   color: #20b5c9;
+}
+
+.main {
+  width: 100%;
+  min-height: 400px;
+  max-height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main--body {
+  height: 100%;
+  width: 95%;
+  border-radius: clamp(24px, 5vw, 70px);
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: clamp(40px, 5vw, 120px);
+}
+.main--body div {
+  color: #fff;
+}
+.main--body div .S718d8e {
+  color: #2abec4;
+}
+.main--body div h1 {
+  font-size: clamp(16px, 5vw, 30px);
+}
+.main--body div p {
+  font-weight: 500;
+  font-size: clamp(14px, 5vw, 20px);
+}
+.main--body div a {
+  font-weight: 700;
+  font-size: clamp(20px, 5vw, 30px);
+  color: #b77a48;
 }/*# sourceMappingURL=indes.css.map */
